@@ -1,0 +1,35 @@
+---
+title: "Lesson 1 - History and principles of AI"
+output: html_document
+---
+
+## Principles
+
+- Definitions of AI
+  - Is thermostat AI?
+  - Is chess playing AI?
+  - Is machine translation AI?
+  - "AI is what computers cannot do."
+- Machine learning and AI
+- Types of learning: Supervised / unsupervised / reinforcement 
+  - Semi-supervised
+- Supervised learning: Function approximation
+
+## A look into History
+
+- Overall, the Wiki for [history of AI](https://en.wikipedia.org/wiki/History_of_artificial_intelligence) is a pretty good starting point
+- Search and symbols (Cca 1950 - 1974)
+  - 1965: "machines will be capable, within twenty years, of doing any work a man can do." H. A. Simon
+  - In parallel: first neuronal “networks”
+    - [Perceptron](https://en.wikipedia.org/wiki/Perceptron)
+  - AI Winter
+- Expert systems Cca 1980 - 1987
+  - IF-THEN rules
+  - In parallel: revival of neural networks
+    - Hebb rule, [Hopfield network](https://en.wikipedia.org/wiki/Hopfield_network)
+    - Backpropagation
+      - Biologically questionable, but see e.g. [Song et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610561/)
+    - 3 layers are enough?!
+  - Second AI Winter
+
+

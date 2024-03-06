@@ -1,0 +1,11 @@
+---
+title: "Lesson 1 - Tasks"
+output: html_document
+---
+
+
+## Task 1: Perceptron
+
+- https://codepen.io/bagrounds/pen/wdqypY 
+
+
