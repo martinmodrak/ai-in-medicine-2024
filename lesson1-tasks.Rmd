@@ -107,8 +107,6 @@ dd5 %>%
   expand_limits(y = c(-0.2), x= -0.2)
 ```
 
-## &nbsp;
-
 ```{r class5-extra, fig.height=4, fig.width = 7, include = FALSE}
 set.seed(45655)
 N <- 6
@@ -131,9 +129,6 @@ p <- dd5extra %>%
 p
 ggsave(p, filename = here("docs/lesson1-tasks_files/figure-html/class5-extra.png"), height = 4, width = 7)
 ```
-
-
-## &nbsp;
 
 
 

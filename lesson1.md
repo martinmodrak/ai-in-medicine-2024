@@ -43,6 +43,7 @@ output: html_document
   - AI Winter
 - Expert systems Cca 1980 - 1987
   - IF-THEN rules
+    - Task: build an expert system for diagnosing heart attack
   - In parallel: revival of neural networks
   - Second AI Winter
 - Neural networks
