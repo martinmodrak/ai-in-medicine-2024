@@ -7,8 +7,13 @@ The plan for future lessons is tentative --- this is a first time this course is
 run so we'll see how things work out.
 
 - Lesson 1 - History and principles of AI: [outline](lesson1.html), [tasks](lesson1-tasks.html)
-- Lesson 2 - Modern neural networks
-- Lesson 3 - Large language models 
+
+<!--
+# - Lesson 2 - Modern neural networks
+# - Lesson 3 - Large language models 
+```
+-->
 
 
-TODO: Final task
+Credit will be given to anyone with at most 2 absences, who completes a final
+task (given on the last lesson, can be completed at the lesson or at home).
