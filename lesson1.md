@@ -20,7 +20,7 @@ output: html_document
     - Mini task: (obscured maze, choose next step)
   - Adversarial search - minimax
     - Example: 
-    - Task: Draw the game tree for tic-tac-toe starting with OOX/X O/  X... and find the optimal move
+    - Task: Draw the game tree for tic-tac-toe starting with OOX/X O/  X... and find the optimal move (X starts). 
   - Logical Inference
     - Sudoku
 - Connectionism
@@ -34,7 +34,9 @@ output: html_document
   - Evolutionary algorithms
   - Optimal control
 
-## A look into History
+## A look into History 
+
+__Tato kapitola nakonec nebyla odpřednášena, jen jsme si pohráli s perceptronem__
 
 - Overall, the Wiki for [history of AI](https://en.wikipedia.org/wiki/History_of_artificial_intelligence) is a pretty good starting point
 - Search and symbols (Cca 1950 - 1974)
@@ -55,7 +57,6 @@ output: html_document
     - Backpropagation
       - Biologically questionable, but see e.g. [Song et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610561/)
     - 3 layers are enough?!
-  - 
 - Bright future
   - Since ~1993 AI is fashionable again
    - Deep learning (~2011)
