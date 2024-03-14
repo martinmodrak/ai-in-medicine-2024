@@ -115,4 +115,6 @@ Paste the following as "points":
 Go to http://epsilon-it.utu.fi/wv_demo/ and select "English Google News" under "Models".
 
 - Try putting a couple medical terms into the "Nearest words" section. Anything suspicious?
-- Let's play with the Word analogy part - try e.g. entering 
+- Let's play with the "Word analogy" part - select "Top N" as 10 and try
+  - Finding a medical triplet that "works" (good analogy is high in the list)
+  - Find a medical triplet that "fails" 
