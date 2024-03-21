@@ -11,7 +11,7 @@
 
 
 
-<title>Lesson 2 - Machine learning, validation, overfitting</title>
+<title>Lesson 3 - Building ChatGPT</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -260,8 +260,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Lesson 2 - Machine learning, validation,
-overfitting</h1>
+<h1 class="title toc-ignore">Lesson 3 - Building ChatGPT</h1>
 
 </div>
 
@@ -269,90 +268,52 @@ overfitting</h1>
 <ul>
 <li>Review last time:
 <ul>
-<li>Perceptron (we’ll get there)</li>
+<li>Modern neural networks move away from biology</li>
+<li>Many layers (deep)</li>
+<li>Still kind of perceptron-like</li>
 </ul></li>
 </ul>
-<div id="validation" class="section level2">
-<h2>Validation</h2>
+<div id="towards-chatgpt" class="section level2">
+<h2>Towards ChatGPT</h2>
 <ul>
-<li>Example with Stable diffusions “blue grass, green sky”</li>
-<li>Example with ChatGPT
+<li>ChatGPT is based on the transformer architecture</li>
+<li>We will roughly follow <a
+href="http://nlp.seas.harvard.edu/annotated-transformer/"
+class="uri">http://nlp.seas.harvard.edu/annotated-transformer/</a> , but
+note that ChatGPT is (as far as we know) just decoders and has no
+encoder element</li>
+<li>Word embeddings - a good detailed writeup at <a
+href="https://jalammar.github.io/illustrated-word2vec/"
+class="uri">https://jalammar.github.io/illustrated-word2vec/</a>
 <ul>
-<li>“I pick 25 people at random. What is the probability that at least
-two were born on the same day of year?”</li>
-<li>“I pick 25 people at random. What is the probability that at least
-two were born in the same year?”</li>
-</ul></li>
-<li>Why is this happening?</li>
-<li>Note: ChatGPT improved in this substantially in the past year or
-so</li>
-<li>ChatGPT is at its a core a function from “the dialogue so far” to
-“probability distribution over next words”
-<ul>
-<li>Yo mama is at its core …</li>
-<li>There’s a lot of details missing here</li>
-</ul></li>
-<li>We don’t just want a function to pass through training points!
-<ul>
-<li>Overfitting!</li>
-<li>The goal is generalization</li>
-<li>Question: how can we check generalization?</li>
-</ul></li>
-<li>Validation
-<ul>
-<li>Internal validation
-<ul>
-<li>Crossvalidation</li>
-</ul></li>
-<li>External validation</li>
-</ul></li>
-<li>Back to simple functions
-<ul>
-<li>Refresher: lines, polynomials</li>
-</ul></li>
 <li>Task 1</li>
+</ul></li>
+<li>Attention heads</li>
+<li>The full transformer</li>
+<li><a
+href="https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)">Fine-tuning</a></li>
+<li><a
+href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">Reinforcement
+learning from human feedback</a></li>
 </ul>
 </div>
-<div id="neural-networks" class="section level2">
-<h2>Neural networks</h2>
+<div id="working-with-chatgpt" class="section level2">
+<h2>Working with ChatGPT</h2>
 <ul>
-<li>Neural network is “just” another function
+<li>Task 2</li>
+<li>Discussion:
 <ul>
-<li>Yo mama is “just” another function</li>
+<li>Some things work pretty well</li>
+<li>Framing matters</li>
 </ul></li>
-<li>Refresh perceptron (1940s)</li>
-<li>First revival (1980s)
+<li>Task 3</li>
+<li>Discussion:
 <ul>
-<li>Hebb rule, <a
-href="https://en.wikipedia.org/wiki/Hopfield_network">Hopfield
-network</a></li>
-<li>Backpropagation
-<ul>
-<li>Biologically questionable, but see e.g. <a
-href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610561/">Song et
-al. 2020</a></li>
-</ul></li>
-<li>3 layers are enough?!</li>
-</ul></li>
-<li>Bright future
-<ul>
-<li>Deep learning (~2011)</li>
-<li>GPU</li>
-</ul></li>
-<li>Modern ideas for neural networks
-<ul>
-<li>ReLU</li>
-<li>Autoencoders
-<ul>
-<li>Semi supervised learning!</li>
-</ul></li>
-<li>Convolution</li>
-<li>Word embeddings</li>
+<li>We don’t tech humans with large datasets (mostly)</li>
+<li>Learning within sessions?</li>
+<li>OpenAI papers over most of the obvious failures.</li>
 </ul></li>
 </ul>
-</div>
-<div id="notes-for-next-le" class="section level2">
-<h2>Notes for next le</h2>
 </div>
 
 

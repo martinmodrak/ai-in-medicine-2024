@@ -11,7 +11,7 @@
 
 
 
-<title>Lesson 2 - Machine learning, validation, overfitting</title>
+<title>Lesson 3 - Task materials</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -260,99 +260,82 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Lesson 2 - Machine learning, validation,
-overfitting</h1>
+<h1 class="title toc-ignore">Lesson 3 - Task materials</h1>
 
 </div>
 
 
+<div id="word-embeddings" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Word embeddings</h1>
+<p>Go to <a href="http://195.113.43.46:3388/index.html"
+class="uri">http://195.113.43.46:3388/index.html</a> (won’t work outside
+Motol and available only for the class). Remember that extra results
+will only be visible in small font at the top of the frame.</p>
 <ul>
-<li>Review last time:
+<li>Note the inputs and results for later sharing!</li>
+<li>Try putting a couple medical terms into the “Get most similar”
+section. Anything suspicious?</li>
+<li>Let’s play with the “Word analogy” part (the three box with “X is to
+Y as Z is to …”.
 <ul>
-<li>Perceptron (we’ll get there)</li>
-</ul></li>
-</ul>
-<div id="validation" class="section level2">
-<h2>Validation</h2>
-<ul>
-<li>Example with Stable diffusions “blue grass, green sky”</li>
-<li>Example with ChatGPT
-<ul>
-<li>“I pick 25 people at random. What is the probability that at least
-two were born on the same day of year?”</li>
-<li>“I pick 25 people at random. What is the probability that at least
-two were born in the same year?”</li>
-</ul></li>
-<li>Why is this happening?</li>
-<li>Note: ChatGPT improved in this substantially in the past year or
-so</li>
-<li>ChatGPT is at its a core a function from “the dialogue so far” to
-“probability distribution over next words”
-<ul>
-<li>Yo mama is at its core …</li>
-<li>There’s a lot of details missing here</li>
-</ul></li>
-<li>We don’t just want a function to pass through training points!
-<ul>
-<li>Overfitting!</li>
-<li>The goal is generalization</li>
-<li>Question: how can we check generalization?</li>
-</ul></li>
-<li>Validation
-<ul>
-<li>Internal validation
-<ul>
-<li>Crossvalidation</li>
-</ul></li>
-<li>External validation</li>
-</ul></li>
-<li>Back to simple functions
-<ul>
-<li>Refresher: lines, polynomials</li>
-</ul></li>
-<li>Task 1</li>
-</ul>
-</div>
-<div id="neural-networks" class="section level2">
-<h2>Neural networks</h2>
-<ul>
-<li>Neural network is “just” another function
-<ul>
-<li>Yo mama is “just” another function</li>
-</ul></li>
-<li>Refresh perceptron (1940s)</li>
-<li>First revival (1980s)
-<ul>
-<li>Hebb rule, <a
-href="https://en.wikipedia.org/wiki/Hopfield_network">Hopfield
-network</a></li>
-<li>Backpropagation
-<ul>
-<li>Biologically questionable, but see e.g. <a
-href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610561/">Song et
-al. 2020</a></li>
-</ul></li>
-<li>3 layers are enough?!</li>
-</ul></li>
-<li>Bright future
-<ul>
-<li>Deep learning (~2011)</li>
-<li>GPU</li>
-</ul></li>
-<li>Modern ideas for neural networks
-<ul>
-<li>ReLU</li>
-<li>Autoencoders
-<ul>
-<li>Semi supervised learning!</li>
-</ul></li>
-<li>Convolution</li>
-<li>Word embeddings</li>
+<li>Find a medical triplet that “works” (good analogy is high in the
+result list)</li>
+<li>Find a medical triplet that “fails”</li>
 </ul></li>
 </ul>
 </div>
-<div id="notes-for-next-le" class="section level2">
-<h2>Notes for next le</h2>
+<div id="chatgpt-plays-mostly-nicely" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> ChatGPT plays (mostly)
+nicely</h1>
+<ul>
+<li>You’ll need to login to <a href="https://chat.openai.com/"
+class="uri">https://chat.openai.com/</a> and create an account, super
+sorry!</li>
+<li>For some subtasks, we’ll work with medical papers - you can find a
+lot of them at e.g. the website of <a
+href="https://www.nejm.org/">NEJM</a>, <a
+href="https://www.bmj.com/">BMJ</a> or <a
+href="https://journals.plos.org/plosmedicine/">PLoS Medicine</a>.</li>
+<li>Take a (part of) the abstract of a medical paper (e.g. from the
+website of NEJM, BMJ or PLoS Medicine) and ask ChatGPT to rewrite it
+without jargon / or so that a kid could understand it.</li>
+<li>Take an abstract of a paper and ask ChatGPT to propose several
+possible titles. How well do they match with the actual title?</li>
+<li>Ask ChatGPT to translate a paragraph from a medical paper into Czech
+(or other language you know).</li>
+<li>Experiment with couple of prompts like “Explain why X causes Y”.
+What X and Y get the most “interesting” result?
+<ul>
+<li>Test how the answers change with a different framing (“You are …..
+Explain …”)</li>
+</ul></li>
+<li>Try to make ChatGPT say that vaccines cause autism without
+mentioning any pro-vaccine points.</li>
+</ul>
+</div>
+<div id="limits-of-chatgpt" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Limits of ChatGPT</h1>
+<ul>
+<li>Make ChatGPT tell you the lyrics to a song (it might refuse to
+reproduce some because their copyrighted, find some which ChatGPT will
+be OK with providing).</li>
+<li>Make ChatGPT summarise a non-existent book by a well-known author
+(it will resist for some obvious cases, try hard!).</li>
+<li>Ask ChatGPT to remember something. Then ask it to summarise a piece
+of text. And then another. Finally ask it to recall.
+<ul>
+<li>How long can the text be before ChatGPT is unable to recall the
+information?
+<ul>
+<li>ChatGPT will not allow you to submit a single message that is too
+long, so you might need to post multiple long messages to make it
+forget.</li>
+</ul></li>
+<li>A good source of long texts to summarise - the research papers at <a
+href="https://journals.plos.org/plosmedicine/"
+class="uri">https://journals.plos.org/plosmedicine/</a></li>
+</ul></li>
+</ul>
 </div>
 
 
