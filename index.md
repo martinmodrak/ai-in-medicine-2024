@@ -11,6 +11,8 @@ run so we'll see how things work out.
 - Lesson 3 - Building ChatGPT: [outline](lesson3.html), [tasks](lesson3-tasks.html)
 - Lesson 4 - Text mining with ChatGPT: [outline](lesson4.html)
 
+Pozor: Lekce 5 přesunuta na 11. 4., 4.4. výuka nebude.
+
 <!--
 # - Lesson 2 - Modern neural networks
 # - Lesson 3 - Large language models 
