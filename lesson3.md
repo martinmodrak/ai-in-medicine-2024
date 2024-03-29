@@ -18,6 +18,7 @@ output: html_document
  - The full transformer
  - [Fine-tuning](https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning))
  - [Reinforcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback)
+ - System prompt
 
 ## Working with ChatGPT
  - Task 2
@@ -26,6 +27,7 @@ output: html_document
    - Framing matters
    - Following instructions vs. not being a PR disaster
      - No AI is value free!
+     - Jailbreak prompts
  - Task 3
  - Discussion:
    - We don't tech humans with large datasets (mostly)

@@ -5,7 +5,6 @@ output:
     number_sections: true
 ---
 
-
 # Word embeddings
 
 Go to http://195.113.43.46:3388/index.html (won't work outside Motol and available only for the class). Remember that extra results will only be visible in small font at the top of the frame.
