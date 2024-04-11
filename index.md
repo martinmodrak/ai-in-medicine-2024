@@ -10,6 +10,7 @@ run so we'll see how things work out.
 - Lesson 2 - Machine learning, validation, overfitting: [outline](lesson2.html), [tasks](lesson2-tasks.html)
 - Lesson 3 - Building ChatGPT: [outline](lesson3.html), [tasks](lesson3-tasks.html)
 - Lesson 4 - Text mining with ChatGPT: [outline](lesson4.html)
+- Lesson 5 - Basics of image analysis: [outline](lesson5.html), [tasks](lesson5-tasks.html)
 
 Pozor: Lekce 5 přesunuta na 11. 4., 4.4. výuka nebude.
 
