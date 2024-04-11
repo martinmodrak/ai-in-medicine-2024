@@ -42,8 +42,12 @@ We are mostly following the tutorial at:  https://qupath.readthedocs.io/en/0.5/d
 # Analyze a Ki-67 image on your own
 
 - Try the same set of steps for the file `Ki67_2.jpg`   
-- You'll need to set the pixel size (both with and height) t o under "Image" in the left pane
+- You'll need to set the pixel size (both with and height) to 0.67um under "Image" in the left pane
 
 
+# Test cellpose on Ki-67
+
+- File -> Export snapshot -> Current viewer content
+- https://www.cellpose.org/
 
 
