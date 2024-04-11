@@ -23,6 +23,7 @@ Will be done together with everybody
 
 We are mostly following the tutorial at:  https://qupath.readthedocs.io/en/0.5/docs/tutorials/cell_detection.html
 
+- Open file "OS-2.tif" in QuPath
 - Check Image (left pane) -> Pixel width
 - View -> Brightness + Contrast
   - Inspect channels/stains
@@ -39,9 +40,10 @@ We are mostly following the tutorial at:  https://qupath.readthedocs.io/en/0.5/d
 
 
 # Analyze a Ki-67 image on your own
-  
+
+- Try the same set of steps for the file `Ki67_2.jpg`   
+- You'll need to set the pixel size (both with and height) t o under "Image" in the left pane
 
 
 
-https://qupath.readthedocs.io/en/0.5/docs/tutorials/cell_detection.html
 
