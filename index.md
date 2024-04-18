@@ -11,15 +11,8 @@ run so we'll see how things work out.
 - Lesson 3 - Building ChatGPT: [outline](lesson3.html), [tasks](lesson3-tasks.html)
 - Lesson 4 - Text mining with ChatGPT: [outline](lesson4.html)
 - Lesson 5 - Basics of image analysis: [outline](lesson5.html), [tasks](lesson5-tasks.html)
-
-Pozor: Lekce 5 přesunuta na 11. 4., 4.4. výuka nebude.
-
-<!--
-# - Lesson 2 - Modern neural networks
-# - Lesson 3 - Large language models 
-```
--->
+- Lesson 6 - Simple machine learning with histology slides: [outline](lesson6.html), [tasks](lesson6-tasks.html)
 
 
-Credit will be given to anyone with at most 2 absences, who completes a final
-task (given on the last lesson, can be completed at the lesson or at home).
+Credit will be given to anyone with at most 2 absences, who completes the final
+task (described within tasks for [Lesson 6](lesson6-tasks.html))

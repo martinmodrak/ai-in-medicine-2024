@@ -11,7 +11,7 @@
 
 
 
-<title>Lesson 4 - Using ChatGPT for text mining</title>
+<title>Lesson 6 - Task materials</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -260,40 +260,120 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Lesson 4 - Using ChatGPT for text
-mining</h1>
+<h1 class="title toc-ignore">Lesson 6 - Task materials</h1>
 
 </div>
 
 
-<p>Most of the lesson was spent on playing with language models, so
-little content here.</p>
+<div id="download-data-for-lesson" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Download data for
+lesson</h1>
 <ul>
-<li>Review large language models</li>
-<li>Let’s get to tasks. You can work in pairs!</li>
-<li>Wrap up:
+<li>Download everything from <a href="http://195.113.43.46:3388/"
+class="uri">http://195.113.43.46:3388/</a> , folder lesson 6
 <ul>
-<li>Language models are currently fickle</li>
-<li>Failure modes are non-intuitive
+<li>This includes materials from previous lessons</li>
+<li>File sources (for access from outside):
 <ul>
-<li>Will now advanced math concepts, but fail in hangman (šibenice)</li>
+<li>Same as previous lesson:
+<ul>
+<li>QuPath: <a
+href="https://github.com/qupath/qupath/releases/download/v0.5.1/QuPath-v0.5.1-Windows.zip"
+class="uri">https://github.com/qupath/qupath/releases/download/v0.5.1/QuPath-v0.5.1-Windows.zip</a></li>
+<li>Ki67 Slide 1: <a
+href="https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/OS-2.ndpi"
+class="uri">https://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/OS-2.ndpi</a></li>
+</ul></li>
+<li>New for this lesson:
+<ul>
+<li>Lung cancer samples stained for MAGEA4 <a
+href="https://www.ebi.ac.uk/biostudies/files/S-BIAD453/MAGEA4/MAGEA4_(CAB040535)_25000_BOMI2_slide1.svs"
+class="uri">https://www.ebi.ac.uk/biostudies/files/S-BIAD453/MAGEA4/MAGEA4_(CAB040535)_25000_BOMI2_slide1.svs</a></li>
 </ul></li>
 </ul></li>
-<li>Air Canada had to pay for Chatbot’s promises (<a
-href="https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know"
-class="uri">https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know</a>)</li>
-<li>A personal rant on the inefficiency and wastefulness of the current
-approach - instead of pouring resources into feasible and helpful tasks
-(e.g. analysing medical records) most of the resources go to chase
-“artificial general intelligence” while making no profit and allowing so
-far only for primarily undesirable outcomes (e.g. better spam)
-<ul>
-<li>Let’s see if the hype is too heavy to produce a bubble similar to
-the Web 2.0 bubble. Note that web turned out later to be a
-transformational technology. But the initial hype was just too
-much.</li>
 </ul></li>
+<li>Save to a temporary folder (e.g. on Desktop)</li>
 </ul>
+</div>
+<div id="unpack-and-run-qupath" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Unpack and run
+QuPath</h1>
+</div>
+<div id="train-a-classifier-together" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Train a classifier
+together</h1>
+<p>Following <a
+href="https://qupath.readthedocs.io/en/0.5/docs/tutorials/cell_classification.html"
+class="uri">https://qupath.readthedocs.io/en/0.5/docs/tutorials/cell_classification.html</a></p>
+<ul>
+<li>Open OS-2.ndpi</li>
+<li>Detect cells</li>
+<li>Measure -&gt; show measurements maps
+<ul>
+<li>Nucleus/cell area ratio (filter!)</li>
+<li>Adjust max!</li>
+</ul></li>
+<li>Analyze -&gt; Calculate features -&gt; Add smoothed features</li>
+<li>Annotate regions</li>
+<li>Classify -&gt; Object classification -&gt; Train object classifier
+<ul>
+<li>Live update</li>
+</ul></li>
+<li>Classify ‣ Object classification ‣ Set cell intensity
+classifications.</li>
+</ul>
+</div>
+<div id="final-task-for-credit" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Final task (for
+credit)</h1>
+<p><strong>Important:</strong> Start with creating a new project. This
+will let you send the results needed to get credit.</p>
+<p>Evaluating the presence of cancer-testis antigens in multiple tissue
+samples.</p>
+<p>The original study is at <a
+href="https://europepmc.org/article/MED/37341056#mol213474-sec-0007"
+class="uri">https://europepmc.org/article/MED/37341056#mol213474-sec-0007</a>
+(for interest only, not needed for the task)</p>
+<p>Import file <code>MAGEA4_(CAB040535)_25000_BOMI2_slide1.svs</code>
+into the QuPath project (drag onto the window or File -&gt; Open).</p>
+<p>There are many samples in the same file, we will focus on the
+top-left cores (the first 4 in the first row).</p>
+<p>Run cell detection for a couple areas. The default settings will tend
+to detect too many cells due to the relatively low resolution of the
+image. You will want to increase smoothing via “Median filter radius”
+and “Sigma” options. You may also need to change the “Background radius”
+setting to allow for larger cells.</p>
+<p>Once you are happy with the result, store (e.g. screenshot, or just
+write down) your final cell detection parameters!</p>
+<p>Train a classifier to distinguish between the two cell populations
+shown below - you can use Positive/Negative classes (or add your own in
+the Annotations card in the left pane and the “…” button below the class
+list).</p>
+<p><img src="populations-final-task.png" /></p>
+<p>Save the classifier.</p>
+<p>To get credit at the lesson, show your results to lecturer. Outside
+of the class, send: your cell detection parameters (screenshot is fine)
+and the classifier file (found under
+<code>your-project-directory\classifiers\object_classifiers</code>) to
+<a href="mailto:martin.modrak@lfmotol.cuni.cz"
+class="email">martin.modrak@lfmotol.cuni.cz</a></p>
+<!-- 
+Note to self: evaluate on 
+Slide 1: 
+   - Top 4, Left - 2
+   - Bottom - 3, LEft-
+Slide 2:
+  - Left 4, Top - 2
+  - Top 1, Right - 4 ( - 3without spaces)
+  - Bottom -3, Left - 5 (-3 without spaces)
+-->
+</div>
+<div id="bonus-tasks" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Bonus tasks</h1>
+<p>Detect cell on whole patches and calculate positive/negative-ly
+stained proportion in each cell-type.</p>
+<p>Find other populations to classify in different types of samples.</p>
+</div>
 
 
 
