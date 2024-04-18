@@ -8,7 +8,7 @@ output:
 
 # Download data for lesson
 
-- Download everything from http://195.113.43.46:3388/  , folder lesson 6
+- Download everything from http://195.113.43.46:3388/ 
   - This includes materials from previous lessons
   - File sources (for access from outside): 
     - Same as previous lesson:
